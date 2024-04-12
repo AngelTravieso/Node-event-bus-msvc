@@ -10,8 +10,8 @@ app.post('/events', (req, res) => {
     const event = req.body;
 
     axios.post('http://localhost:4000/events', event); // post service
-    axios.post('http://localhost:4250/events', event); // comments service
-    axios.post('http://localhost:4251/events', event); // query service
+    axios.post('http://localhost:4001/events', event); // comments service
+    axios.post('http://localhost:4002/events', event); // query service
 
     res.send({ status: 'OK' })
 
